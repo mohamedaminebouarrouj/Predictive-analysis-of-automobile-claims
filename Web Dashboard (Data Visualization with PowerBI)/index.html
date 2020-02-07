@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from jthemes.org/demo-admin/minton/index-analytics.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Dec 2018 17:47:41 GMT -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Tell the browser to be responsive to screen width -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Admin Mintone">
+<meta name="author" content="Admin Mintone">
+<!-- Favicon icon -->
+<link rel="icon" type="image/png" sizes="16x16" href="assets/imgs/favicon.png">
+<title>ML: Lab 3 Dashboard</title>
+<!-- Bootstrap Core CSS -->
+<link href="plugins/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="plugins/vendors/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+<!-- This page CSS -->
+<!-- chartist CSS -->
+<link href="plugins/vendors/morrisjs/morris.css" rel="stylesheet">
+<link href="assets/css/pages/easy-pie-chart.css" rel="stylesheet">
+
+ 
+
+<!--c3 CSS -->
+<link href="plugins/vendors/c3-master/c3.min.css" rel="stylesheet">
+<!--Toaster Popup message CSS -->
+<link href="plugins/vendors/toast-master/css/jquery.toast.css" rel="stylesheet">
+<!-- Vector CSS -->
+<link href="plugins/vendors/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
+<!-- page css -->
+<link href="assets/css/pages/google-vector-map.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="assets/css/style.css" rel="stylesheet">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="fix-header fix-sidebar card-no-border">
+<!-- ============================================================== -->
+<!-- Preloader - style you can find in spinners.css -->
+<!-- ============================================================== -->
+<div class="preloader">
+  <div class="loader">
+    <div class="loader__figure"></div>
+    <p class="loader__label">D-Miners Welcomes you</p>
+  </div>
+</div>
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<div id="main-wrapper">
+  <!-- ============================================================== -->
+  <!-- Container1140px -->
+  <!-- ============================================================== -->
+  <!-- ============================================================== -->
+  <!-- Topbar header - style you can find in pages.scss -->
+  <!-- ============================================================== -->
+  <header class="topbar">
+    <div Class="container">
+      <nav class="navbar top-navbar navbar-expand-md navbar-light">
+        <!-- ============================================================== -->
+        <!-- Logo -->
+        <!-- ============================================================== -->
+        <div class="navbar-header"> <a class="navbar-brand" href="index.html">
+          <!-- Logo icon -->
+          <b>
+          <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+          <!-- Dark Logo icon -->
+          <img src="assets/imgs/logo-dminers.png" alt="homepage" class="dark-logo" />
+          <!-- Light Logo icon -->
+          <img src="assets/imgs/logo-dminers.png" alt="homepage" class="light-logo" /> </b>
+          <!--End Logo icon -->
+          <!-- Logo text -->
+          </a> </div>
+        <!-- ============================================================== -->
+        <!-- End Logo -->
+        <!-- ============================================================== -->
+        <div class="top-bar-main">
+          <!-- ============================================================== -->
+          <!-- toggle and nav items -->
+          <!-- ============================================================== -->
+		  <center><h2 class="text-uppercase">&nbsp Sinistres Automobiles Corporels : Dashboard</h2></center>
+
+  </header>
+  
+ <div class="container">
+	<aside class="left-sidebar">
+      <!-- Sidebar scroll-->
+      <div class="scroll-sidebar">
+        <!-- Sidebar navigation-->
+        <nav class="sidebar-nav">
+          <ul id="sidebarnav">
+            <li class="clearfix"></li>
+			<li><a href="index.html"><i class="flaticon-restaurant"></i><span class="hide-menu">Home Page</span></a></li>
+            <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="flaticon-desktop-computer-screen-with-rising-graph"></i><span class="hide-menu">Dashboard</span></a>
+              <ul aria-expanded="false" class="collapse">
+			  <li><a href="an_mois.html" style="font-size:95%">Caractéristique : Années & Mois</a></li>
+			  <li><a href="commune.html" style="font-size:95%">Caractéristique : Communes</a></li>
+			  <li><a href="meteo.html" style="font-size:95%">Caractéristique: Météos</a></li>
+                <li><a href="sexe.html" style="font-size:95%">Caractéristique : Sexes</a></li>
+                <li><a href="route.html" style="font-size:95%">Caractéristique : Routes</a></li>
+                
+                <li><a href="usager.html" style="font-size:95%">Caractéristique : Usagers</a></li>
+              </ul>
+            </li>
+			<!-- <li><a href="email.html"><i class="flaticon-mail"></i> <span class="hide-menu">Mail</span></a></li>
+            <li><a href="chats.html"><i class="flaticon-speech"></i><span class="hide-menu">Chat</span></a></li>
+            <li><a href="to-do.html"><i class="flaticon-forms"></i><span class="hide-menu">To Do</span></a></li>
+            <li><a href="change-log.html"><i class="flaticon-file"></i><span class="hide-menu">Change Log</span></a></li> -->
+            
+          </ul>
+        </nav>
+        <!-- End Sidebar navigation -->
+      </div>
+      <!-- End Sidebar scroll-->
+	  
+    </aside>
+	  <!-- Page wrapper  -->
+    <!-- ============================================================== -->
+    <div class="page-wrapper">
+      <!-- ============================================================== -->
+      <!-- Container fluid  -->
+      <!-- ============================================================== -->
+<div class="container-fluid">
+        
+		 <div class="card-body">
+		 <h5 class="card-title float-left m-t-20 m-l-20 m-r-20 align-self-center tasks statistics text-uppercase">Contexte du projet</h5>
+                      <div class="clearfix"></div>
+					  <div class="m-t-20 p-20 no-block">
+                        <div class="row font-16">
+                          <div class="col-lg-2 col-md-3 col-sm-12"> <span class="weight-500 text-dark">Déscription</span> </div>
+                          <div class="col-lg-10 col-md-9 col-sm-12">
+                            <p>En mars 2010, l’Assemblée générale des Nations Unies a adopté la résolution A/RES/64/255, par laquelle elle proclame la décennie 2011-2020 Décennie d’action pour la sécurité routière en vue de stabiliser puis de réduire le nombre prévu de décès imputables aux accidents de la route dans le monde en multipliant les activités menées aux niveaux national, régional et mondial.</p>
+							<br><br>
+							<p>Suite à un appel d'offre de la part du gouvernement francais; visant une étude complète de l'efficacité de cette campagne de sensibilisation menée par les Nations Unies, et quelles mesures métiers pragmatiques à prendre, nous sommes ainsi amenés à créer un Dashboard de support pour les projets d'intervention et maintenance au niveau de la structure de la carte routière, en fournissant des prédictions temporelles permettant de prévoir les détails des années prochaines concernant notre étude pour soutenir les services de santé et de secours SOS.</p>
+							 <img src="assets/imgs/decennie.jpg" style="width:150px;height:150px;"> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="assets/imgs/UNlogo.jpg" style="width:150px;height:150px;">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+		 
+      </div>
+		
+        <!-- ============================================================== -->
+        <!-- End chart box one -->
+
+      </div>
+	  <center><footer class="text-uppercase">Developped by D-Miners 2018.© </footer></center>
+
+</div>
+<!-- ============================================================== -->
+<!-- End Wrapper -->
+<!-- ============================================================== -->
+<!-- All Jquery -->
+<!-- ============================================================== -->
+<script src="plugins/vendors/jquery/jquery.min.js"></script>
+<!-- Bootstrap popper Core JavaScript -->
+<script src="plugins/vendors/bootstrap/js/popper.min.js"></script>
+<script src="plugins/vendors/bootstrap/js/bootstrap.min.js"></script>
+<!-- slimscrollbar scrollbar JavaScript -->
+<script src="plugins/vendors/ps/perfect-scrollbar.jquery.min.js"></script>
+<!--jquery knob -->
+<script src="plugins/vendors/knob/jquery.knob.js"></script>
+<!--Wave Effects -->
+<script src="assets/js/waves.js"></script>
+<!--Menu sidebar -->
+<script src="assets/js/sidebarmenu.js"></script>
+<!--Custom JavaScript -->
+<script src="assets/js/custom.min.js"></script>
+<!-- ============================================================== -->
+<!-- This page plugins -->
+<!-- Popup message jquery -->
+<script src="plugins/vendors/toast-master/js/jquery.toast.js"></script>
+<!-- EASY PIE CHART JS -->
+<script src="plugins/vendors/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+<script src="plugins/vendors/jquery.easy-pie-chart/easy-pie-chart.init.js"></script>
+<!-- ============================================================== -->
+<!--Sparkline JavaScript -->
+<script src="plugins/vendors/sparkline/jquery.sparkline.min.js"></script>
+ 
+  <!--Morris JavaScript -->
+<script src="plugins/vendors/raphael/raphael-min.js"></script>
+<script src="plugins/vendors/morrisjs/morris.js"></script>
+
+
+ <!-- Chart JS -->
+<script src="plugins/vendors/Chart.js/Chart.min.js"></script>
+<script src="assets/js/analytics-page-chart.js"></script>
+ 
+<!-- Vector map JavaScript -->
+<script src="plugins/vendors/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
+<script src="plugins/vendors/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+
+ 
+ <!-- Dashboard JS -->
+<script src="assets/js/dashboard-analytics.js"></script>
+
+
+</body>
+
+<!-- Mirrored from jthemes.org/demo-admin/minton/index-analytics.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Dec 2018 17:47:45 GMT -->
+</html>
