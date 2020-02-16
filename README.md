@@ -13,3 +13,5 @@ Carry out an analysis of automobile claims data in France.
 • Python  
 • R  
 • MS Power BI  
+  
+###### Worked on this project with "D-miners" Teammates : Ramy Kader, Karim Massoudi, Helmi Bellahirech, Maissa Ouni 
